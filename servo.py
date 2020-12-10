@@ -16,9 +16,11 @@ def SetAngle(angle):
 	GPIO.output(servoPIN, False)
 	pwm.ChangeDutyCycle(0)
 
-pwm.start(2.5)
+pwm.start(0)
+SetAngle(90)
+
 while True:
-	SetAngle(1)
-	print("1")
-	SetAngle(360)
-	print("360")
+	print("90")
+	SetAngle(90)
+	print("180")
+	SetAngle(180)
